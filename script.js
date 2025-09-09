@@ -64,7 +64,7 @@ function multiply(){
         number -= 20000;
         score.innerHTML = number;
         addition = function plusSeventyfive(){
-            number += 75;
+            number += 120;
             score.innerHTML = number;
         }
     }
@@ -72,7 +72,7 @@ function multiply(){
         number -= 100000;
         score.innerHTML = number;
         addition = function plusHundred(){
-            number += 100;
+            number += 300;
             score.innerHTML = number;
         }
     }
@@ -80,7 +80,7 @@ function multiply(){
         number -= 500000;
         score.innerHTML = number;
         addition = function plusTwohundred(){
-            number += 200;
+            number += 600;
             score.innerHTML = number;
         }
     }
