@@ -1,0 +1,299 @@
+@media (max-width: 600px) {
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: lightblue;
+
+}
+header{
+    color: blue;
+    background-color: lightgray;
+    padding: 10px 10px 10px 5px;
+    box-shadow: 5px 5px 15px gray;
+    margin-bottom: 20px;
+}
+.clicker{
+    margin-left:0 ;
+    margin-right:0;
+    display: grid;
+    border: 2px solid lightgreen;
+    width: max;
+    height: 600px;
+    grid-template-areas: "score score"
+                         "multiplier multiplier"
+                            "reset reset"
+                         "button button";
+    box-shadow: 5px 5px 15px green;
+}
+.score{
+    grid-area: score;
+    span: 2;
+    font-size: 24px;
+    border: 2px solid green;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    box-shadow: 3px 3px 5px darkgreen;
+    border-radius: 10% 10% 0 0;
+}
+.button{
+    grid-area: button;
+    font-size: 20px;
+    border: 2px solid yellow;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px gold;
+    border-radius: 0 0 15% 15%;
+}
+.clk{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(201, 201, 13);
+    border-radius: 10%;
+}
+.button:hover{
+    grid-area: button;
+    font-size: 20px;
+    border: 2px solid yellow;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px darkorange;
+    transform: scale(1.02);
+    transition: transform 0.2s;
+}
+
+.multiplier{
+    grid-area: multiplier;
+    font-size: 20px;
+    border: 2px solid orange;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px darkorange;
+}
+.mlp{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(207, 138, 8);
+    border-radius: 10%;
+}
+.multiplier:hover{
+    grid-area: multiplier;
+    font-size: 20px;
+    border: 2px solid orange;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px darkorange;
+    transform: scale(1.02);
+    transition: transform 0.2s;
+}
+.reset{
+    grid-area: reset;
+    span:2;
+    font-size: 20px;
+    border: 2px solid red;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px darkred;
+}
+.rst{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(207, 8, 8);
+    border-radius: 10%;
+}
+.reset:hover{
+    grid-area: reset;
+    span:2;
+    font-size: 20px;
+    border: 2px solid red;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px darkred;
+    transform: scale(1.02);
+    transition: transform 0.2s;
+}
+footer{
+    color: blue;
+    background-color: lightgray;
+    padding: 5px 5px 10px 5px;
+    box-shadow: 5px 5px 15px gray;
+    margin-top: 20px;
+}
+}
+@media (min-width: 601px) {
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: lightblue;
+
+}
+header{
+    color: blue;
+    background-color: lightgray;
+    padding: 30px;
+    box-shadow: 5px 5px 15px gray;
+    margin-bottom: 20px;
+}
+.clicker{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    display: grid;
+    border: 2px solid lightgreen;
+    width: 500px;
+    height: 800px;
+    grid-template-areas: "score score"
+                         "reset multiplier"
+                         "button button";
+    box-shadow: 5px 5px 15px green;
+    border-radius: 10%;
+    padding: auto;
+}
+.score{
+    grid-area: score;
+    span: 2;
+    font-size: 24px;
+    border: 2px solid green;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    box-shadow: 3px 3px 10px darkgreen;
+    border-radius: 40% 40% 0 0;
+}
+.button{
+    grid-area: button;
+    font-size: 20px;
+    border: 2px solid yellow;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px gold;
+    border-radius: 0 0 40% 40%;
+}
+.clk{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(201, 201, 13);
+    border-radius: 10%;
+}
+.button:hover{
+    grid-area: button;
+    font-size: 20px;
+    border: 2px solid yellow;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px darkorange;
+    transform: scale(1.02);
+    transition: transform 0.2s;
+}
+
+.multiplier{
+    grid-area: multiplier;
+    font-size: 20px;
+    border: 2px solid orange;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-basis: 50%;
+    box-shadow: 3px 3px 10px darkorange;
+}
+.mlp{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(207, 138, 8);
+    border-radius: 10%;
+}
+.multiplier:hover{
+    grid-area: multiplier;
+    font-size: 20px;
+    border: 2px solid orange;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-basis: 50%;
+    box-shadow: 3px 3px 10px darkorange;
+    transform: scale(1.02);
+    transition: transform 0.2s;
+}
+.reset{
+    grid-area: reset;
+    span:2;
+    font-size: 20px;
+    border: 2px solid red;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-basis: 50%;
+    box-shadow: 3px 3px 10px darkred;
+}
+.rst{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(207, 8, 8);
+    border-radius: 10%;
+}
+.reset:hover{
+    grid-area: reset;
+    span:2;
+    font-size: 20px;
+    border: 2px solid red;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-basis: 50%;
+    box-shadow: 3px 3px 10px darkred;
+    transform: scale(1.02);
+    transition: transform 0.2s;
+}
+footer{
+    color: blue;
+    background-color: lightgray;
+    padding: 20px;
+    box-shadow: 5px 5px 15px gray;
+    margin-top: 20px;
+}
+}

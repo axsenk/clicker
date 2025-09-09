@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+    <header><h1>Bienvenue sur 
+        Clicker Game
+    </h1></header>
+    <div class="clicker"> 
+    <div class="score"><h3>Score:</h3>
+    <h3 class="scr"></h3></div>
+    <div class="button">
+        <input class="clk" type="button" value="Click me!" id="clickButton" 
+        onclick="addition()">
+    </div>
+    <div class="multiplier">
+        <details><summary>Paliers</summary>
+            <ul>
+                <li>20pts = x2</li>
+                <li>50pts = x5</li>
+                <li>200pts = x10</li>
+                <li>500pts = x15</li>
+                <li>1000pts = x30</li>
+                <li>5000pts = x50</li>
+                <li>20000pts = x75</li>
+                <li>100000pts = x100</li>
+                <li>500000pts = x200</li> 
+            </ul>    
+        </details>
+        <input type="button" class="mlp" value="Multiplier" id="multiplierButton"
+        onclick="multiply()">
+    </div>
+    <div class="reset">
+        <input type="button" class="rst" value="Reset" id="resetButton" 
+        onclick="reset()">
+    </div>
+    </div>
+    <footer>
+        <p>Made by Axsenk ®
+        copyright 
+        2025
+        All rights reserved
+
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
